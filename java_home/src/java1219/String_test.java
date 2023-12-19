@@ -31,9 +31,10 @@ public class String_test {
 		 */
 		String chr = "chrismas";
 		String temp = song.replaceAll("#","\n").replaceAll("당신", "그대").replaceAll("크리스마스",chr.toUpperCase());
-		
+	
 		
 		System.out.println(temp);
+		
 		
 		
 	}
