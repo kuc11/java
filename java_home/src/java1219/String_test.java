@@ -30,10 +30,24 @@ public class String_test {
 		 * 4. 세번째#뒤의 가사가 무엇인지 출력하세요
 		 */
 		String chr = "chrismas";
-		String temp = song.replaceAll("#","\n").replaceAll("당신", "그대").replaceAll("크리스마스",chr.toUpperCase());
-	
 		
+		String temp = song.replaceAll("#","\n").replaceAll("당신", "그대").replaceAll("크리스마스",chr.toUpperCase());
+//		String temp2 = song.substring(song.indexOf("#")+1,song.length()-1);
+//		String temp3 = temp2.substring(temp2.indexOf("#")+1,temp2.length()-1);
+//		String temp4 = temp3.substring(temp3.indexOf("#")+1,temp3.length()-1);
+//		temp4 = temp4.substring(0,temp4.indexOf("#"));
+		// trim 양쪽끝에 공백 제거
+		String temp2 = song;
+		for(int i=0; i<3; i++) {
+			temp2 = temp2.substring(temp2.indexOf("#")+1,temp2.length()-1);
+		}
+		temp2 = temp2.substring(0,temp2.indexOf("#"));
+		
+		System.out.println("원본: "+song);
+		System.out.println("");
 		System.out.println(temp);
+		System.out.println("");
+		System.out.println(temp2);
 		
 		
 		
