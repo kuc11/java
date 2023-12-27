@@ -1,5 +1,6 @@
 package java_study1226;
 
+import java.util.Arrays;
 
 public class java_method {
 
@@ -16,11 +17,9 @@ public class java_method {
 		melon[7] = new music("정국","Standing Next to You",326);
 		melon[8] = new music("AKMU","Love Lee",259);
 		melon[9] = new music("IVE","I AM",303);
-		
+		for(int i=0;i<melon.length;i++)
+		System.out.println(melon[i]);
 	}
-	static void list_print( music[] melon) {
-		for ( music obj : melon) {
-			System.out.println(obj);
-		}
+
 	}
-}
+

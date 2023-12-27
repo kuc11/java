@@ -12,5 +12,9 @@ public class music {
 		this.title=노래;
 		this.playtime=time;
 	}
+public String toString() {
+	return "가수:"+singer+"  노래:"+title+"  플레이타임:"+playtime;
+}
+
 
 }
