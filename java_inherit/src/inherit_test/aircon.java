@@ -4,5 +4,7 @@ public class aircon extends house{	// 자식: aircon  부모:house (부모는 �
 
 	int temp; 	// 온도
 	int speed;	// 풍속
-	
+	public void power() {
+		onoff = !onoff;
+	}
 }
