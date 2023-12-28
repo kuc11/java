@@ -1,6 +1,7 @@
 package java_study1226;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class java_method {
 
@@ -19,6 +20,7 @@ public class java_method {
 		melon[9] = new music("IVE","I AM",303);
 		for(int i=0;i<melon.length;i++)
 		System.out.println(melon[i]);
+		
 	}
 
 	}
