@@ -22,7 +22,7 @@ public class java_study {
 		System.out.println( mbr.subList(1, 4));
 		// 메모리에는 중복주소는 없다.
 		System.out.println( mbr.indexOf("유재석"));
-//		ArrayList<Integer> arr = new ArrayList<Integer>();		//<> 안에 기본데이터 타입지정 불가하고 클래스만 들어갈수 있다.
+//		ArrayList<Integer> arr = new ArrayList<Integer>();		//<> 안에 기본데이터 타입지정은 불가하고 클래스만 들어갈수 있다.
 //		
 //		arr.add(10);
 //		arr.add(20);
