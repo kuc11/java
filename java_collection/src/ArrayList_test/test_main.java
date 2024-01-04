@@ -24,16 +24,16 @@ public class test_main {
 		
 		try(BufferedReader bf= new BufferedReader(new FileReader("c:/test/food.txt")))
 		{	
+			
 			while(true) {
 				String line = bf.readLine();
 				if(line==null)break;
 				String[] tmp = line.split("-");
 				food data = new food(tmp[0],Integer.parseInt(tmp[1]),tmp[2]);
 				fd.add(data);
-				
 			}
-		}
-		catch(Exception e) {
+			
+		}catch(Exception e) {
 			System.out.println("파일 로드 및 반환 실패");
 			e.printStackTrace();
 		}
