@@ -8,7 +8,10 @@ public class Order {
 	public static void kiosk() {
 		System.out.println("\n=========== 주문 ===========");
 		
-
+		Category main = Category.커피;
+		while(true) {
+			System.out.println("1.커피 2.음료 3.빽스치노");
+		}
 	}
 	// 주문 진행하는 메서드 : 주문할 제품을 선택했다면 결제까지 진행되는 메서드
 	

@@ -53,7 +53,7 @@ public class file {
 				String[] tmp = line.split(",");
 				member res = new member(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],i(tmp[5]));
 				list.add(res);
-				System.out.println(res);
+				
 			}
 			return list;
 			
