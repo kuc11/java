@@ -8,6 +8,21 @@ public class member {
 	private String nickName;	// 닉네임
 	private int midd; 			// 회원번호 - 1000001
 	
+
+	public member() {}
+	public member(String id, String password) {
+		this.id=id;
+		this.password=password;
+	}
+	public member(String id,String password,String email,String tel,String name, int midd) {
+		this.id=id;
+		this.password=password;
+		this.email=email;
+		this.tel=tel;
+		this.nickName=name;
+		this.midd=midd;
+		
+	}
 	@Override
 	public boolean equals(Object o) {
 		member tmp = (member)o;		// 멤버타입으로 형변화
@@ -15,24 +30,6 @@ public class member {
 			return this.password.equals(tmp.password);	// 입력한 비밀번호와 일치하는가?
 		}
 		return false;	// 아이디가 일치하지않으면 false 변환
-	}
-	public member() {}
-	public member(String id, String password) {
-		this.id=id;
-		this.password=password;
-	}
-	public member(String id,String email,String password,String tel,String nickName, int midd) {
-		this.id=id;
-		this.email=email;
-		this.password=password;
-		this.tel=tel;
-		this.nickName=nickName;
-		this.midd=midd;
-		
-	}
-	@Override
-	public String toString() {
-		return null;
 	}
 	
 	public String getId() {

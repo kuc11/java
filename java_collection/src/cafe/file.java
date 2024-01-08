@@ -10,6 +10,31 @@ import customer.member;
 
 public class file {
 	
+	public static List<member> member_load(){
+		List<member> list= new ArrayList<>();
+		try(BufferedReader bf = new BufferedReader(new FileReader("c:/test/member.txt"))){
+			
+			while(true) {
+				String line = bf.readLine();
+				if(line == null) break;
+				System.out.println(line);
+				String[] tmp = line.split(",");
+				
+				member res = new member(tmp[0],tmp[1],tmp[3],tmp[2],tmp[4],i(tmp[5]));
+				list.add(res);
+				
+			}
+			return list;
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+			System.out.println("member 파일 로드 실패");
+		}
+		return null;
+		
+	}
+	
+	
 	public static HashMap<String,menu> menu_Load() {	
 		
 		HashMap<String,menu> list = new HashMap<>();
@@ -43,27 +68,7 @@ public class file {
 			return Integer.parseInt(number);
 	}
 	
-	public static List<member> member_load(){
-		List<member> list= new ArrayList<>();
-		try(BufferedReader bf = new BufferedReader(new FileReader("c:/test/member.txt"))){
-			
-			while(true) {
-				String line = bf.readLine();
-				if(line==null) break;
-				String[] tmp = line.split(",");
-				member res = new member(tmp[0],tmp[1],tmp[2],tmp[3],tmp[4],i(tmp[5]));
-				list.add(res);
-				
-			}
-			return list;
-			
-		}catch(Exception e) {
-			e.printStackTrace();
-			System.out.println("member 파일 로드 실패");
-		}
-		return null;
-		
-	}
+
 	
 	
 	

@@ -8,7 +8,7 @@ public class menu {
 	private int ml;				// 용량
 	private int cost1;			// hot, basic
 	private int cost2;			// ice, soft
-	private Category type=Category.음료;	// 분류
+	private Category type;	// 분류
 	
 	public menu() {}	// 기본 생성자 메서드
 	public menu(String menu_name, int cost1, int cost2, int caffeine,
@@ -26,7 +26,7 @@ public class menu {
 	@Override
 	public String toString() {
 		
-		return null;
+		return menu_name;
 	}
 	
 	
